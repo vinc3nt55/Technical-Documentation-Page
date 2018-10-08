@@ -1,0 +1,126 @@
+@import "reset";
+@import "responsive";
+
+body{
+	max-height: 1000vh;
+	width: 100%;
+	height: 100%;
+	font-family: Ariel, Helvetica, sans-serif;
+}
+/*navbar------------------------------------------*/
+#navbar{
+	width: 330px;
+	height: 100vh;
+	position: fixed;
+	border-right: solid;
+	border-bottom:  solid;
+	border-color: #222;
+	left: 0px;
+	top: 0px;
+	@include media-query(815px) {
+		position: absolute;
+		border-right: none;
+		top: 0;
+		width: 100%;
+		height: 300px;
+		margin: 0;
+		padding: 0;
+	}
+	header{
+		text-align: center;
+		font-size: 1.8em;
+		margin: 30px;
+	}
+	ul{
+		height: 84%;
+		display: block;
+		list-style-type: disc;
+		overflow-x: hidden;
+		overflow-y: auto;
+		@include media-query(815px) {
+			border: solid;
+			height: 207px;
+			width: 100%;
+		}
+		li{
+			border: 1px solid;
+			border-bottom-width: 0px; 
+			list-style: none;
+			width: 100%;
+			a{
+				background-color: #fff;
+				text-decoration: none;
+				display: block;
+				padding-left: 45px;
+				font-size: 1em;
+				height: 25px;
+				color: #262626;
+				padding-top: 15px;
+			}
+			a:hover{
+				background: #262626;
+				color: #fff;
+			}
+		}
+	}
+}
+
+/*main-doc--------------------------------------*/
+#main-doc{
+	height: 200vh;
+	position: absolute;
+	margin-left: 350px;
+	padding: 20px;
+	@include media-query(815px) {
+		width: 97%;
+		margin-top: 300px;
+		margin-left: 0;
+		position: relative;
+	}
+	header{
+		text-align: left;
+		font-size: 2.1em;
+		font-weight: 500;
+	}
+	article{
+		margin: 20px;
+		p{
+			line-height: 23px;
+			margin-top: 25px;
+		}
+		li{
+			margin: 30px 0 0 15px;
+			display: list-item;
+			line-height: 23px;
+		}
+	}
+}
+code{
+	background-color: #f7f7f7;
+	display: block;
+	white-space: pre;
+	position: relative;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 2;
+	padding: 10px;
+	margin: 15px;
+	border-radius: 5px; 
+}
+/*Data types ul's*/
+#data_types article .data_types_p{
+	margin-top: 5px;
+}
+#data_types article li ul{
+	padding-left: 25px; 
+}
+#data_types article li ul li,#while_statement article li, #function_declarations article li{
+	margin-top: 15px;
+}
+#reference{
+	margin-bottom: 150px;
+	li{
+		padding-top: 25px;
+		padding-left: 25px;
+	}
+}

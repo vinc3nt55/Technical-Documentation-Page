@@ -1,0 +1,213 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+body {
+  line-height: 1; }
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+del {
+  text-decoration: line-through; }
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+input, select {
+  vertical-align: middle; }
+
+/*---------------------------------------------------------------------------------*/
+body {
+  max-height: 1000vh;
+  width: 100%;
+  height: 100%;
+  font-family: Ariel, Helvetica, sans-serif; }
+
+/*navbar------------------------------------------*/
+#navbar {
+  width: 330px;
+  height: 100vh;
+  position: fixed;
+  border-right: solid;
+  border-bottom: solid;
+  border-color: #222;
+  left: 0px;
+  top: 0px; }
+
+@media screen and (max-width: 815px) {
+  #navbar {
+    position: absolute;
+    border-right: none;
+    top: 0;
+    width: 100%;
+    height: 300px;
+    margin: 0;
+    padding: 0; } }
+
+#navbar header {
+  text-align: center;
+  font-size: 1.8em;
+  margin: 30px; }
+
+#navbar ul {
+  height: 84%;
+  display: block;
+  list-style-type: disc;
+  overflow-x: hidden;
+  overflow-y: auto; }
+
+@media screen and (max-width: 815px) {
+  #navbar ul {
+    border: solid;
+    height: 207px;
+    width: 100%; } }
+
+#navbar ul li {
+  border: 1px solid;
+  border-bottom-width: 0px;
+  list-style: none;
+  width: 100%; }
+
+#navbar ul li a {
+  background-color: #fff;
+  text-decoration: none;
+  display: block;
+  padding-left: 45px;
+  font-size: 1em;
+  height: 25px;
+  color: #262626;
+  padding-top: 15px; }
+
+#navbar ul li a:hover {
+  background: #262626;
+  color: #fff; }
+
+/*main-doc--------------------------------------*/
+#main-doc {
+  height: 200vh;
+  position: absolute;
+  margin-left: 350px;
+  padding: 20px; }
+
+@media screen and (max-width: 815px) {
+  #main-doc {
+    width: 97%;
+    margin-top: 300px;
+    margin-left: 0;
+    position: relative; } }
+
+#main-doc header {
+  text-align: left;
+  font-size: 2.1em;
+  font-weight: 500; }
+
+#main-doc article {
+  margin: 20px; }
+
+#main-doc article p {
+  line-height: 23px;
+  margin-top: 25px; }
+
+#main-doc article li {
+  margin: 30px 0 0 15px;
+  display: list-item;
+  line-height: 23px; }
+
+code {
+  background-color: #f7f7f7;
+  display: block;
+  white-space: pre;
+  position: relative;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 2;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px; }
+
+/*Data types ul's*/
+#data_types article .data_types_p {
+  margin-top: 5px; }
+
+#data_types article li ul {
+  padding-left: 25px; }
+
+#data_types article li ul li, #while_statement article li, #function_declarations article li {
+  margin-top: 15px; }
+
+#reference {
+  margin-bottom: 150px; }
+
+#reference li {
+  padding-top: 25px;
+  padding-left: 25px; }
